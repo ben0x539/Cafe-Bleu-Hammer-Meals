@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Café Bleu Hammer Meals</string>
+    <string name="action_update">Load Hammer meals</string>
+    <string name="dialog_no_net">No network connection available.</string>
+    <string name="dialog_update_failed">Could not load meals.</string>
+    <string name="dialog_ok">Oh well</string>
+    <string name="label_no_data">No meals loaded.</string>
+    <string name="label_updating">Loading this week\'s Hammer meals…</string>
+
+</resources>
