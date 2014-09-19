@@ -23,10 +23,6 @@ class UpdateTask extends AsyncTask<Void, Void, Boolean> {
         startTime = new Date().getTime();
     }
 
-    static void go(MenuActivity a) {
-        new UpdateTask(a).execute();
-    }
-
     long getAge() {
         long now = new Date().getTime();
 
@@ -88,8 +84,8 @@ class UpdateTask extends AsyncTask<Void, Void, Boolean> {
     // onPostExecute displays the results of the AsyncTask.
     @Override
     protected void onPostExecute(Boolean b) {
-        if (b.booleanValue()) {
-            activity.updateMenu();
+        if (b) {
+            activity.updateSucceeded();
         } else {
             activity.updateFailed();
         }
